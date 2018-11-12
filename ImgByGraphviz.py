@@ -74,13 +74,21 @@ def getModel(path):
                 nodeNum = int(node_items[0])
                 featureKey = node_items[2]
                 featureValue = float(node_items[3])
-                params = node_items[5]
+                stats = node_items[5].split(",")
+                if len(stats) > 3:
+                    params = ",".join(stats[-2:]) + "\n" + ",".join(stats[:3])
+                else:
+                    params = node_items[5]
             else:
                 # leaf node
                 nodeNum = int(node_items[0])
                 featureKey = ""
                 featureValue = ""
-                params = node_items[1]
+                stats = node_items[1].split(",")
+                if len(stats) > 1:
+                    params = stats[-1] + "\n" + stats[0]
+                else:
+                    params = node_items[1]
             nodeMap[nodeNum] = (featureKey, featureValue, params, node_depth)
         #  print(nodeMap)
     booster_list.append(nodeMap)
@@ -94,25 +102,70 @@ def toGraph(booster_list, feature_map):
     with gbdt.subgraph(name = "booster" + str(i+1)) as booster:
         for key, node in booster_list[i].items():
             if DEPTH is not None and node[3] > DEPTH:
-		continue
-	    name = "%s-%s" % (str(i+1),str(key))
+                continue
+            name = "%s-%s" % (str(i+1),str(key))
             tag = 'num=%s, depth=%s\n' % (str(key), str(node[3]))
-	    if node[0] == '':
+            if node[0] == '':
                 booster.node(name, tag + node[2])
-	    else:
-                booster.node(name, feature_map.get(node[0]) +"<" + str(node[1])+ '\n'+ tag + node[2])
-            	if DEPTH is not None and node[3] >= DEPTH:
+            else:
+                booster.node(name, feature_map.get(node[0]) + "<" + str(node[1]) + '\n'+ tag + node[2])
+                if DEPTH is not None and node[3] > DEPTH:
                     continue
-		children_node = re.split("[,=]", node[2])
-		left_node = "%s-%s" % (str(i+1), children_node[1])
-		right_node = "%s-%s" % (str(i+1), children_node[3])
-		booster.edge(name, left_node, 'Yes')
-		booster.edge(name, right_node, 'No')
+                children_node = re.split("[,=]", node[2])
+                left_node = "%s-%s" % (str(i+1), children_node[-5])
+                right_node = "%s-%s" % (str(i+1), children_node[-3])
+                booster.edge(name, left_node, 'Yes')
+                booster.edge(name, right_node, 'No')
     # default output file
     output = 'test'
     if OUTPUT_PATH != '':
-	output = OUTPUT_PATH
+        output = OUTPUT_PATH
     gbdt.render(output)
+
+
+def getTree(booster_list, feature_map, num):
+    # build Tree
+    def getNode(nodeMap, nId):
+        node = {}
+        node['num'] = nId
+        if nodeMap[nId][0] == '':
+            node['isLeaf'] = True
+            node['value'] = float(nodeMap[nId][2].split(",")[0].split('=')[1])
+        else:
+            node['value'] = feature_map.get(nodeMap[nId][0]) + "<" + str(nodeMap[nId][1])
+            children_node = re.split("[,=]", node[2])
+            left_node = int(children_node[-5])
+            right_node = int(children_node[-3])
+            node['children'] = [getNode(nodeMap, left_node), getNode(nodeMap, right_node)]
+            node['isLeaf'] = False
+        return node
+    return getNode(booster_list[num], 0)
+
+def sortTree(tree):
+    from copy import deepcopy
+    res,out = [], [[],[]]
+    def sortTreeDFS(node, res, out):
+        if node["isLeaf"]:
+            temp = deepcopy(out)
+            temp[0].append(str(node['num']))
+            temp.append(node["value"])
+            res.append(temp)
+        else:
+            for cNode in node['children']:
+                out[0].append(str(node['num']))
+                out[1].append(node['value'])
+                sortTreeDFS(cNode, res, out)
+                out[0].pop()
+                out[1].pop()
+
+    sortTreeDFS(tree, res, out)
+    res.sort(key=lambda item: item[-1],reverse=True)
+    return res
+
+def toCSV(tree):
+    with open("tree.csv",'w') as f:
+        for i in tree:
+            f.write(">".join(i[0])+ " " + ",".join(i[1]) +" "+ str(i[-1]) +"\n")
 
 def toJson(booster_list, feature_map):
     
@@ -127,14 +180,16 @@ def toJson(booster_list, feature_map):
             children_node = re.split("[,=]", nodeMap[nId][2])
             left_node = int(children_node[1])
             right_node = int(children_node[3])
+            #left_node = int(nId*2+1)
+            #right_node = int(nId*2+2)
             node['children'] = [getNode(nodeMap, left_node), getNode(nodeMap, right_node)]
         return node
 
     temp_list = []
-    #  for booster in booster_list:
-        #  temp_list.append(getNode(booster, 0))
+    for i in range(len(booster_list)):
+        temp_list.append(getNode(booster_list[i], 0))
 
-    temp_list.append(getNode(booster_list[0], 0))
+    #temp_list.append(getNode(booster_list[0], 0))
     return json.dumps(temp_list)
 
 
@@ -151,5 +206,8 @@ if __name__ == '__main__':
     # get Model
     booster_list = getModel(MODEL_PATH)
     # to Json
-    #  print toJson(booster_list, feature_map)
+    #print toJson(booster_list, feature_map)
     toGraph(booster_list, feature_map)
+    #tree = getTree(booster_list,feature_map, BOOSTER_NUM)
+    #res = sortTree(tree)
+    #toCSV(res)

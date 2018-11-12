@@ -1,0 +1,2304 @@
+// GBDT boosters
+digraph {
+	graph [rankdir=LR]
+	subgraph booster2 {
+		"2-0" [label="bh_lcf_score0<1.69429898
+num=0, depth=1
+gain=4714045.5,cover=42008912
+yes=1,no=2,missing=2"]
+		"2-0" -> "2-1" [label=Yes]
+		"2-0" -> "2-2" [label=No]
+		"2-1" [label="bh_lcf_score0<0.928498983
+num=1, depth=2
+gain=514458.719,cover=36381924
+yes=3,no=4,missing=4"]
+		"2-1" -> "2-3" [label=Yes]
+		"2-1" -> "2-4" [label=No]
+		"2-2" [label="bh_lcf_score0<2.99589896
+num=2, depth=2
+gain=699361.625,cover=5626989
+yes=5,no=6,missing=6"]
+		"2-2" -> "2-5" [label=Yes]
+		"2-2" -> "2-6" [label=No]
+		"2-3" [label="mt_img_count_show<1.99999905
+num=3, depth=3
+gain=228898.656,cover=31039672
+yes=7,no=8,missing=8"]
+		"2-3" -> "2-7" [label=Yes]
+		"2-3" -> "2-8" [label=No]
+		"2-4" [label="bh_lcf_score0<1.26889908
+num=4, depth=3
+gain=39681.3828,cover=5342252
+yes=9,no=10,missing=10"]
+		"2-4" -> "2-9" [label=Yes]
+		"2-4" -> "2-10" [label=No]
+		"2-5" [label="bh_lcf_score0<2.28889894
+num=5, depth=3
+gain=79173.8906,cover=3761788.25
+yes=11,no=12,missing=12"]
+		"2-5" -> "2-11" [label=Yes]
+		"2-5" -> "2-12" [label=No]
+		"2-6" [label="bh_lcf_score0<4.30969906
+num=6, depth=3
+gain=133708.297,cover=1865200.75
+yes=13,no=14,missing=14"]
+		"2-6" -> "2-13" [label=Yes]
+		"2-6" -> "2-14" [label=No]
+		"2-7" [label="bh_lcf_score0<0.372198999
+num=7, depth=4
+gain=25851.1953,cover=8503155
+yes=15,no=16,missing=16"]
+		"2-7" -> "2-15" [label=Yes]
+		"2-7" -> "2-16" [label=No]
+		"2-8" [label="bh_dssm_score<0.616998971
+num=8, depth=4
+gain=94339.7422,cover=22536518
+yes=17,no=18,missing=18"]
+		"2-8" -> "2-17" [label=Yes]
+		"2-8" -> "2-18" [label=No]
+		"2-9" [label="clk_real_36h<781.0
+num=9, depth=4
+gain=11934.1299,cover=2759484.75
+yes=19,no=20,missing=20"]
+		"2-9" -> "2-19" [label=Yes]
+		"2-9" -> "2-20" [label=No]
+		"2-10" [label="ctr_real_thirty<0.143711895
+num=10, depth=4
+gain=14100.0176,cover=2582767
+yes=21,no=22,missing=22"]
+		"2-10" -> "2-21" [label=Yes]
+		"2-10" -> "2-22" [label=No]
+		"2-11" [label="ctr_real_thirty<0.14659591
+num=11, depth=4
+gain=15150.7979,cover=2251305.75
+yes=23,no=24,missing=24"]
+		"2-11" -> "2-23" [label=Yes]
+		"2-11" -> "2-24" [label=No]
+		"2-12" [label="bh_scls_mt_classes_cos<0.0178675391
+num=12, depth=4
+gain=10081.8721,cover=1510482.5
+yes=25,no=26,missing=26"]
+		"2-12" -> "2-25" [label=Yes]
+		"2-12" -> "2-26" [label=No]
+		"2-13" [label="bh_lcf_score0<3.47769904
+num=13, depth=4
+gain=18201.6152,cover=1246582
+yes=27,no=28,missing=28"]
+		"2-13" -> "2-27" [label=Yes]
+		"2-13" -> "2-28" [label=No]
+		"2-14" [label="bh_scls_mt_classes_cos<0.021492213
+num=14, depth=4
+gain=14525.6133,cover=618618.688
+yes=29,no=30,missing=30"]
+		"2-14" -> "2-29" [label=Yes]
+		"2-14" -> "2-30" [label=No]
+		"2-15" [label="clk_real_16h<1098.0
+num=15, depth=5
+gain=14511.2891,cover=7664046
+yes=31,no=32,missing=32"]
+		"2-15" -> "2-31" [label=Yes]
+		"2-15" -> "2-32" [label=No]
+		"2-16" [label="bh_lcf_score0<0.648099005
+num=16, depth=5
+gain=2811.78589,cover=839108.562
+yes=33,no=34,missing=34"]
+		"2-16" -> "2-33" [label=Yes]
+		"2-16" -> "2-34" [label=No]
+		"2-17" [label="ctr_real_sixty<0.130684957
+num=17, depth=5
+gain=95653.8047,cover=19806450
+yes=35,no=36,missing=36"]
+		"2-17" -> "2-35" [label=Yes]
+		"2-17" -> "2-36" [label=No]
+		"2-18" [label="ctr_real_16h<0.122198731
+num=18, depth=5
+gain=23235.7812,cover=2730067.25
+yes=37,no=38,missing=38"]
+		"2-18" -> "2-37" [label=Yes]
+		"2-18" -> "2-38" [label=No]
+		"2-19" [label="bh_cls_mt_classes_cos<0.0121138822
+num=19, depth=5
+gain=7158,cover=1877751.12
+yes=39,no=40,missing=40"]
+		"2-19" -> "2-39" [label=Yes]
+		"2-19" -> "2-40" [label=No]
+		"2-20" [label="ctr_real_thirty<0.16215466
+num=20, depth=5
+gain=2359.0708,cover=881733.75
+yes=41,no=42,missing=42"]
+		"2-20" -> "2-41" [label=Yes]
+		"2-20" -> "2-42" [label=No]
+		"2-21" [label="imp_thirty<2619.0
+num=21, depth=5
+gain=10735.0566,cover=1608551.88
+yes=43,no=44,missing=44"]
+		"2-21" -> "2-43" [label=Yes]
+		"2-21" -> "2-44" [label=No]
+		"2-22" [label="bh_cls_mt_classes_cos<0.0657564327
+num=22, depth=5
+gain=3871.0813,cover=974215.188
+yes=45,no=46,missing=46"]
+		"2-22" -> "2-45" [label=Yes]
+		"2-22" -> "2-46" [label=No]
+		"2-23" [label="bh_scls_mt_classes_cos<0.0124478703
+num=23, depth=5
+gain=11092.832,cover=1391384.25
+yes=47,no=48,missing=48"]
+		"2-23" -> "2-47" [label=Yes]
+		"2-23" -> "2-48" [label=No]
+		"2-24" [label="bh_lcf_score0<1.971699
+num=24, depth=5
+gain=4704.79053,cover=859921.438
+yes=49,no=50,missing=50"]
+		"2-24" -> "2-49" [label=Yes]
+		"2-24" -> "2-50" [label=No]
+		"2-25" [label="ctr_real_sixty<0.126868635
+num=25, depth=5
+gain=6026.47949,cover=534324.875
+yes=51,no=52,missing=52"]
+		"2-25" -> "2-51" [label=Yes]
+		"2-25" -> "2-52" [label=No]
+		"2-26" [label="cp_ulevel_3<2.00000095
+num=26, depth=5
+gain=11822.8174,cover=976157.625
+yes=53,no=54,missing=54"]
+		"2-26" -> "2-53" [label=Yes]
+		"2-26" -> "2-54" [label=No]
+		"2-27" [label="bh_scls_mt_classes_cos<0.0253843125
+num=27, depth=5
+gain=4739.42969,cover=617759.375
+yes=55,no=56,missing=56"]
+		"2-27" -> "2-55" [label=Yes]
+		"2-27" -> "2-56" [label=No]
+		"2-28" [label="bh_scls_mt_classes_cos<0.021492213
+num=28, depth=5
+gain=6182.0376,cover=628822.688
+yes=57,no=58,missing=58"]
+		"2-28" -> "2-57" [label=Yes]
+		"2-28" -> "2-58" [label=No]
+		"2-29" [label="ctr_real_36h<0.0885230303
+num=29, depth=5
+gain=7619.9375,cover=210724.984
+yes=59,no=60,missing=60"]
+		"2-29" -> "2-59" [label=Yes]
+		"2-29" -> "2-60" [label=No]
+		"2-30" [label="cp_ulevel_3<2.00000095
+num=30, depth=5
+gain=6432.52783,cover=407893.719
+yes=61,no=62,missing=62"]
+		"2-30" -> "2-61" [label=Yes]
+		"2-30" -> "2-62" [label=No]
+		"2-31" [label="bh_dssm_score<0.579199016
+num=31, depth=6
+gain=17368.0566,cover=7191233
+yes=63,no=64,missing=64"]
+		"2-31" -> "2-63" [label=Yes]
+		"2-31" -> "2-64" [label=No]
+		"2-32" [label="mt_app_type_2880<2.00000095
+num=32, depth=6
+gain=4701.82666,cover=472813.094
+yes=65,no=66,missing=66"]
+		"2-32" -> "2-65" [label=Yes]
+		"2-32" -> "2-66" [label=No]
+		"2-33" [label="clk_real_36h<877.0
+num=33, depth=6
+gain=1275.98438,cover=490140.625
+yes=67,no=68,missing=68"]
+		"2-33" -> "2-67" [label=Yes]
+		"2-33" -> "2-68" [label=No]
+		"2-34" [label="clk_real_36h<877.0
+num=34, depth=6
+gain=1060.62427,cover=348967.906
+yes=69,no=70,missing=70"]
+		"2-34" -> "2-69" [label=Yes]
+		"2-34" -> "2-70" [label=No]
+		"2-35" [label="bh_dssm_score<0.51719898
+num=35, depth=6
+gain=20584.6445,cover=14844110
+yes=71,no=72,missing=72"]
+		"2-35" -> "2-71" [label=Yes]
+		"2-35" -> "2-72" [label=No]
+		"2-36" [label="lcf_tag_0<2.00000095
+num=36, depth=6
+gain=24373.9922,cover=4962339.5
+yes=73,no=74,missing=74"]
+		"2-36" -> "2-73" [label=Yes]
+		"2-36" -> "2-74" [label=No]
+		"2-37" [label="imp_16h<77.0
+num=37, depth=6
+gain=17835.9141,cover=2334165.5
+yes=75,no=76,missing=76"]
+		"2-37" -> "2-75" [label=Yes]
+		"2-37" -> "2-76" [label=No]
+		"2-38" [label="cp_ulevel_3<2.00000095
+num=38, depth=6
+gain=7033.36523,cover=395901.719
+yes=77,no=78,missing=78"]
+		"2-38" -> "2-77" [label=Yes]
+		"2-38" -> "2-78" [label=No]
+		"2-39" [label="clk_biased_48h<179.210007
+num=39, depth=6
+gain=1165.34644,cover=474783.719
+yes=79,no=80,missing=80"]
+		"2-39" -> "2-79" [label=Yes]
+		"2-39" -> "2-80" [label=No]
+		"2-40" [label="imp_thirty<955.0
+num=40, depth=6
+gain=2709.05737,cover=1402967.38
+yes=81,no=82,missing=82"]
+		"2-40" -> "2-81" [label=Yes]
+		"2-40" -> "2-82" [label=No]
+		"2-41" [label="imp_thirty<3769.0
+num=41, depth=6
+gain=1756.70605,cover=414644.719
+yes=83,no=84,missing=84"]
+		"2-41" -> "2-83" [label=Yes]
+		"2-41" -> "2-84" [label=No]
+		"2-42" [label="bh_cls_mt_classes_cos<0.0952027142
+num=42, depth=6
+gain=1438.5304,cover=467089
+yes=85,no=86,missing=86"]
+		"2-42" -> "2-85" [label=Yes]
+		"2-42" -> "2-86" [label=No]
+		"2-43" [label="bh_cls_mt_classes_cos<0.010435313
+num=43, depth=6
+gain=5655.12207,cover=1423379.38
+yes=87,no=88,missing=88"]
+		"2-43" -> "2-87" [label=Yes]
+		"2-43" -> "2-88" [label=No]
+		"2-44" [label="ctr_real_thirty<0.100391939
+num=44, depth=6
+gain=1517.34973,cover=185172.453
+yes=89,no=90,missing=90"]
+		"2-44" -> "2-89" [label=Yes]
+		"2-44" -> "2-90" [label=No]
+		"2-45" [label="imp_48h<3380.0
+num=45, depth=6
+gain=1318.63,cover=384202.531
+yes=91,no=92,missing=92"]
+		"2-45" -> "2-91" [label=Yes]
+		"2-45" -> "2-92" [label=No]
+		"2-46" [label="clk_real_8h<2337.0
+num=46, depth=6
+gain=1832.00867,cover=590012.688
+yes=93,no=94,missing=94"]
+		"2-46" -> "2-93" [label=Yes]
+		"2-46" -> "2-94" [label=No]
+		"2-47" [label="imp_thirty<2098.0
+num=47, depth=6
+gain=4909.44531,cover=464728.594
+yes=95,no=96,missing=96"]
+		"2-47" -> "2-95" [label=Yes]
+		"2-47" -> "2-96" [label=No]
+		"2-48" [label="bh_lcf_score0<1.971699
+num=48, depth=6
+gain=4595.44824,cover=926655.75
+yes=97,no=98,missing=98"]
+		"2-48" -> "2-97" [label=Yes]
+		"2-48" -> "2-98" [label=No]
+		"2-49" [label="bh_scls_mt_classes_cos<0.0321529098
+num=49, depth=6
+gain=2079.81006,cover=454152.625
+yes=99,no=100,missing=100"]
+		"2-49" -> "2-99" [label=Yes]
+		"2-49" -> "2-100" [label=No]
+		"2-50" [label="bh_scls_mt_classes_cos<0.0418333337
+num=50, depth=6
+gain=1642.37402,cover=405768.781
+yes=101,no=102,missing=102"]
+		"2-50" -> "2-101" [label=Yes]
+		"2-50" -> "2-102" [label=No]
+		"2-51" [label="bh_cls_mt_classes_cos<0.00379839214
+num=51, depth=6
+gain=1562.91541,cover=218539.656
+yes=103,no=104,missing=104"]
+		"2-51" -> "2-103" [label=Yes]
+		"2-51" -> "2-104" [label=No]
+		"2-52" [label="bh_lcf_score0<2.611799
+num=52, depth=6
+gain=1824.06689,cover=315785.219
+yes=105,no=106,missing=106"]
+		"2-52" -> "2-105" [label=Yes]
+		"2-52" -> "2-106" [label=No]
+		"2-53" [label="bh_lcf_score0<2.611799
+num=53, depth=6
+gain=3203.25,cover=614816.812
+yes=107,no=108,missing=108"]
+		"2-53" -> "2-107" [label=Yes]
+		"2-53" -> "2-108" [label=No]
+		"2-54" [label="bh_lcf_score0<2.611799
+num=54, depth=6
+gain=2376.33618,cover=361340.844
+yes=109,no=110,missing=110"]
+		"2-54" -> "2-109" [label=Yes]
+		"2-54" -> "2-110" [label=No]
+		"2-55" [label="ctr_real_thirty<0.125483453
+num=55, depth=6
+gain=2832.51587,cover=233402.219
+yes=111,no=112,missing=112"]
+		"2-55" -> "2-111" [label=Yes]
+		"2-55" -> "2-112" [label=No]
+		"2-56" [label="cp_ulevel_3<2.00000095
+num=56, depth=6
+gain=5240.35645,cover=384357.156
+yes=113,no=114,missing=114"]
+		"2-56" -> "2-113" [label=Yes]
+		"2-56" -> "2-114" [label=No]
+		"2-57" [label="ctr_real_48h<0.0791156441
+num=57, depth=6
+gain=3239.41748,cover=226874.938
+yes=115,no=116,missing=116"]
+		"2-57" -> "2-115" [label=Yes]
+		"2-57" -> "2-116" [label=No]
+		"2-58" [label="cp_ulevel_3<2.00000095
+num=58, depth=6
+gain=5350.92432,cover=401947.75
+yes=117,no=118,missing=118"]
+		"2-58" -> "2-117" [label=Yes]
+		"2-58" -> "2-118" [label=No]
+		"2-59" [label="bh_cls_mt_classes_cos<0.00812780205
+num=59, depth=6
+gain=2429.66309,cover=16733
+yes=119,no=120,missing=120"]
+		"2-59" -> "2-119" [label=Yes]
+		"2-59" -> "2-120" [label=No]
+		"2-60" [label="ctr_real_sixty<0.132796943
+num=60, depth=6
+gain=1890.18677,cover=193991.984
+yes=121,no=122,missing=122"]
+		"2-60" -> "2-121" [label=Yes]
+		"2-60" -> "2-122" [label=No]
+		"2-61" [label="bh_conn_type_2<2.00000095
+num=61, depth=6
+gain=491.076324,cover=152126.953
+yes=123,no=124,missing=124"]
+		"2-61" -> "2-123" [label=Yes]
+		"2-61" -> "2-124" [label=No]
+		"2-62" [label="bh_scls_mt_classes_cos<0.79264766
+num=62, depth=6
+gain=4420.95703,cover=255766.766
+yes=125,no=126,missing=126"]
+		"2-62" -> "2-125" [label=Yes]
+		"2-62" -> "2-126" [label=No]
+		"2-63" [label="clk_real_sixty<9.99999905
+num=63, depth=7
+gain=4459.81006,cover=5766530.5
+yes=127,no=128,missing=128"]
+		"2-63" -> "2-127" [label=Yes]
+		"2-63" -> "2-128" [label=No]
+		"2-64" [label="mt_time_length<31.9999981
+num=64, depth=7
+gain=4015.78564,cover=1424702.38
+yes=129,no=130,missing=129"]
+		"2-64" -> "2-129" [label=Yes]
+		"2-64" -> "2-130" [label=No]
+		"2-65" [label="ctr_real_sixty<0.121163487
+num=65, depth=7
+gain=1457.58606,cover=64668.5
+yes=131,no=132,missing=132"]
+		"2-65" -> "2-131" [label=Yes]
+		"2-65" -> "2-132" [label=No]
+		"2-66" [label="cp_ulevel_3<2.00000095
+num=66, depth=7
+gain=1227.979,cover=408144.594
+yes=133,no=134,missing=134"]
+		"2-66" -> "2-133" [label=Yes]
+		"2-66" -> "2-134" [label=No]
+		"2-67" [label="imp_thirty<342.0
+num=67, depth=7
+gain=815.18219,cover=389617.812
+yes=135,no=136,missing=136"]
+		"2-67" -> "2-135" [label=Yes]
+		"2-67" -> "2-136" [label=No]
+		"2-68" [label="bh_cls_mt_classes_cos<0.148935169
+num=68, depth=7
+gain=157.23024,cover=100522.812
+yes=137,no=138,missing=138"]
+		"2-68" -> "2-137" [label=Yes]
+		"2-68" -> "2-138" [label=No]
+		"2-69" [label="imp_thirty<396.0
+num=69, depth=7
+gain=1249.25354,cover=280306.344
+yes=139,no=140,missing=140"]
+		"2-69" -> "2-139" [label=Yes]
+		"2-69" -> "2-140" [label=No]
+		"2-70" [label="mt_fields_26<2.00000095
+num=70, depth=7
+gain=167.092377,cover=68661.5703
+yes=141,no=142,missing=142"]
+		"2-70" -> "2-141" [label=Yes]
+		"2-70" -> "2-142" [label=No]
+		"2-71" [label="ctr_biased_48h<0.151612788
+num=71, depth=7
+gain=13759.6553,cover=11331509
+yes=143,no=144,missing=144"]
+		"2-71" -> "2-143" [label=Yes]
+		"2-71" -> "2-144" [label=No]
+		"2-72" [label="cp_ulevel_3<2.00000095
+num=72, depth=7
+gain=11909.1113,cover=3512601.25
+yes=145,no=146,missing=146"]
+		"2-72" -> "2-145" [label=Yes]
+		"2-72" -> "2-146" [label=No]
+		"2-73" [label="cp_ulevel_3<2.00000095
+num=73, depth=7
+gain=28301.0684,cover=2888951
+yes=147,no=148,missing=148"]
+		"2-73" -> "2-147" [label=Yes]
+		"2-73" -> "2-148" [label=No]
+		"2-74" [label="bh_lcf_score0<0.590698957
+num=74, depth=7
+gain=18659.2676,cover=2073388.5
+yes=149,no=150,missing=150"]
+		"2-74" -> "2-149" [label=Yes]
+		"2-74" -> "2-150" [label=No]
+		"2-75" [label="bh_rtlabel_mt_labels_cos<0.00999899954
+num=75, depth=7
+gain=12438.8613,cover=1344142.25
+yes=151,no=152,missing=152"]
+		"2-75" -> "2-151" [label=Yes]
+		"2-75" -> "2-152" [label=No]
+		"2-76" [label="ctr_real_16h<0.0744694471
+num=76, depth=7
+gain=11680.2646,cover=990023.125
+yes=153,no=154,missing=154"]
+		"2-76" -> "2-153" [label=Yes]
+		"2-76" -> "2-154" [label=No]
+		"2-77" [label="bh_os_iphone<2.00000095
+num=77, depth=7
+gain=1106.85522,cover=182908.828
+yes=155,no=156,missing=156"]
+		"2-77" -> "2-155" [label=Yes]
+		"2-77" -> "2-156" [label=No]
+		"2-78" [label="ctr_real_16h<0.170161575
+num=78, depth=7
+gain=1726.74084,cover=212992.906
+yes=157,no=158,missing=158"]
+		"2-78" -> "2-157" [label=Yes]
+		"2-78" -> "2-158" [label=No]
+		"2-79" [label="imp_thirty<16.9999981
+num=79, depth=7
+gain=732.699951,cover=268018.344
+yes=159,no=160,missing=160"]
+		"2-79" -> "2-159" [label=Yes]
+		"2-79" -> "2-160" [label=No]
+		"2-80" [label="imp_thirty<804.0
+num=80, depth=7
+gain=772.606934,cover=206765.359
+yes=161,no=162,missing=162"]
+		"2-80" -> "2-161" [label=Yes]
+		"2-80" -> "2-162" [label=No]
+		"2-81" [label="bh_lcf_score0<1.08959901
+num=81, depth=7
+gain=1821.8186,cover=1169009.5
+yes=163,no=164,missing=164"]
+		"2-81" -> "2-163" [label=Yes]
+		"2-81" -> "2-164" [label=No]
+		"2-82" [label="ctr_real_thirty<0.0974578038
+num=82, depth=7
+gain=1450.47656,cover=233957.859
+yes=165,no=166,missing=166"]
+		"2-82" -> "2-165" [label=Yes]
+		"2-82" -> "2-166" [label=No]
+		"2-83" [label="bh_lcf_score0<1.11189902
+num=83, depth=7
+gain=576.892761,cover=363510.438
+yes=167,no=168,missing=168"]
+		"2-83" -> "2-167" [label=Yes]
+		"2-83" -> "2-168" [label=No]
+		"2-84" [label="ctr_real_36h<0.133540228
+num=84, depth=7
+gain=310.313416,cover=51134.2773
+yes=169,no=170,missing=170"]
+		"2-84" -> "2-169" [label=Yes]
+		"2-84" -> "2-170" [label=No]
+		"2-85" [label="bh_lcf_score0<1.08959901
+num=85, depth=7
+gain=445.079224,cover=208917.922
+yes=171,no=172,missing=172"]
+		"2-85" -> "2-171" [label=Yes]
+		"2-85" -> "2-172" [label=No]
+		"2-86" [label="bh_lcf_score0<1.08959901
+num=86, depth=7
+gain=563.628052,cover=258171.078
+yes=173,no=174,missing=174"]
+		"2-86" -> "2-173" [label=Yes]
+		"2-86" -> "2-174" [label=No]
+		"2-87" [label="clk_biased_48h<179.210007
+num=87, depth=7
+gain=1789.11194,cover=277382.031
+yes=175,no=176,missing=176"]
+		"2-87" -> "2-175" [label=Yes]
+		"2-87" -> "2-176" [label=No]
+		"2-88" [label="bh_lcf_score0<1.44959903
+num=88, depth=7
+gain=2865.23145,cover=1145997.38
+yes=177,no=178,missing=178"]
+		"2-88" -> "2-177" [label=Yes]
+		"2-88" -> "2-178" [label=No]
+		"2-89" [label="bh_scls_mt_classes_cos<0.0253843125
+num=89, depth=7
+gain=390.318787,cover=56669.5859
+yes=179,no=180,missing=180"]
+		"2-89" -> "2-179" [label=Yes]
+		"2-89" -> "2-180" [label=No]
+		"2-90" [label="bh_scls_mt_classes_cos<0.00676278817
+num=90, depth=7
+gain=765.162903,cover=128502.867
+yes=181,no=182,missing=182"]
+		"2-90" -> "2-181" [label=Yes]
+		"2-90" -> "2-182" [label=No]
+		"2-91" [label="bh_scls_mt_classes_cos<0.00142961519
+num=91, depth=7
+gain=755.683167,cover=150194.969
+yes=183,no=184,missing=184"]
+		"2-91" -> "2-183" [label=Yes]
+		"2-91" -> "2-184" [label=No]
+		"2-92" [label="imp_thirty<5096.0
+num=92, depth=7
+gain=881.095276,cover=234007.547
+yes=185,no=186,missing=186"]
+		"2-92" -> "2-185" [label=Yes]
+		"2-92" -> "2-186" [label=No]
+		"2-93" [label="bh_lcf_score0<1.49199903
+num=93, depth=7
+gain=913.898499,cover=432659.031
+yes=187,no=188,missing=188"]
+		"2-93" -> "2-187" [label=Yes]
+		"2-93" -> "2-188" [label=No]
+		"2-94" [label="imp_thirty<8836.0
+num=94, depth=7
+gain=438.582397,cover=157353.656
+yes=189,no=190,missing=190"]
+		"2-94" -> "2-189" [label=Yes]
+		"2-94" -> "2-190" [label=No]
+		"2-95" [label="clk_real_48h<153.0
+num=95, depth=7
+gain=2900.38892,cover=389611.031
+yes=191,no=192,missing=192"]
+		"2-95" -> "2-191" [label=Yes]
+		"2-95" -> "2-192" [label=No]
+		"2-96" [label="ctr_real_thirty<0.118357234
+num=96, depth=7
+gain=768.805176,cover=75117.5469
+yes=193,no=194,missing=194"]
+		"2-96" -> "2-193" [label=Yes]
+		"2-96" -> "2-194" [label=No]
+		"2-97" [label="cp_ulevel_3<2.00000095
+num=97, depth=7
+gain=1234.66284,cover=492217.438
+yes=195,no=196,missing=196"]
+		"2-97" -> "2-195" [label=Yes]
+		"2-97" -> "2-196" [label=No]
+		"2-98" [label="cp_ulevel_3<2.00000095
+num=98, depth=7
+gain=1857.66785,cover=434438.281
+yes=197,no=198,missing=198"]
+		"2-98" -> "2-197" [label=Yes]
+		"2-98" -> "2-198" [label=No]
+		"2-99" [label="imp_48h<3001.0
+num=99, depth=7
+gain=1179.60339,cover=193827.828
+yes=199,no=200,missing=200"]
+		"2-99" -> "2-199" [label=Yes]
+		"2-99" -> "2-200" [label=No]
+		"2-100" [label="cp_ulevel_3<2.00000095
+num=100, depth=7
+gain=1818.40869,cover=260324.781
+yes=201,no=202,missing=202"]
+		"2-100" -> "2-201" [label=Yes]
+		"2-100" -> "2-202" [label=No]
+		"2-101" [label="imp_48h<6269.0
+num=101, depth=7
+gain=850.810242,cover=178382.406
+yes=203,no=204,missing=204"]
+		"2-101" -> "2-203" [label=Yes]
+		"2-101" -> "2-204" [label=No]
+		"2-102" [label="cp_ulevel_3<2.00000095
+num=102, depth=7
+gain=2380.28394,cover=227386.391
+yes=205,no=206,missing=206"]
+		"2-102" -> "2-205" [label=Yes]
+		"2-102" -> "2-206" [label=No]
+		"2-103" [label="ctr_real_48h<0.0893058702
+num=103, depth=7
+gain=1243.12158,cover=73961.0781
+yes=207,no=208,missing=208"]
+		"2-103" -> "2-207" [label=Yes]
+		"2-103" -> "2-208" [label=No]
+		"2-104" [label="bh_lcf_score0<2.65729904
+num=104, depth=7
+gain=821.426514,cover=144578.578
+yes=209,no=210,missing=210"]
+		"2-104" -> "2-209" [label=Yes]
+		"2-104" -> "2-210" [label=No]
+		"2-105" [label="imp_36h<5925.0
+num=105, depth=7
+gain=771.985535,cover=166274.734
+yes=211,no=212,missing=212"]
+		"2-105" -> "2-211" [label=Yes]
+		"2-105" -> "2-212" [label=No]
+		"2-106" [label="imp_48h<4291.0
+num=106, depth=7
+gain=555.679749,cover=149510.484
+yes=213,no=214,missing=214"]
+		"2-106" -> "2-213" [label=Yes]
+		"2-106" -> "2-214" [label=No]
+		"2-107" [label="ctr_real_thirty<0.131769374
+num=107, depth=7
+gain=735.988525,cover=333413.719
+yes=215,no=216,missing=216"]
+		"2-107" -> "2-215" [label=Yes]
+		"2-107" -> "2-216" [label=No]
+		"2-108" [label="ctr_real_thirty<0.143711895
+num=108, depth=7
+gain=464.417725,cover=281403.062
+yes=217,no=218,missing=218"]
+		"2-108" -> "2-217" [label=Yes]
+		"2-108" -> "2-218" [label=No]
+		"2-109" [label="ctr_real_sixty<0.142352358
+num=109, depth=7
+gain=835.675781,cover=184035.438
+yes=219,no=220,missing=220"]
+		"2-109" -> "2-219" [label=Yes]
+		"2-109" -> "2-220" [label=No]
+		"2-110" [label="ctr_real_sixty<0.142352358
+num=110, depth=7
+gain=531.298035,cover=177305.406
+yes=221,no=222,missing=222"]
+		"2-110" -> "2-221" [label=Yes]
+		"2-110" -> "2-222" [label=No]
+		"2-111" [label="ctr_real_48h<0.0791156441
+num=111, depth=7
+gain=1284.47729,cover=101643.789
+yes=223,no=224,missing=224"]
+		"2-111" -> "2-223" [label=Yes]
+		"2-111" -> "2-224" [label=No]
+		"2-112" [label="clk_real_16h<599.0
+num=112, depth=7
+gain=259.192688,cover=131758.422
+yes=225,no=226,missing=226"]
+		"2-112" -> "2-225" [label=Yes]
+		"2-112" -> "2-226" [label=No]
+		"2-113" [label="ctr_biased_48h<0.195492402
+num=113, depth=7
+gain=351.332703,cover=219077.812
+yes=227,no=228,missing=228"]
+		"2-113" -> "2-227" [label=Yes]
+		"2-113" -> "2-228" [label=No]
+		"2-114" [label="bh_scls_mt_classes_cos<0.79264766
+num=114, depth=7
+gain=677.315247,cover=165279.344
+yes=229,no=230,missing=230"]
+		"2-114" -> "2-229" [label=Yes]
+		"2-114" -> "2-230" [label=No]
+		"2-115" [label="bh_cls_mt_classes_cos<0.00812780205
+num=115, depth=7
+gain=1105.99658,cover=15240.0381
+yes=231,no=232,missing=232"]
+		"2-115" -> "2-231" [label=Yes]
+		"2-115" -> "2-232" [label=No]
+		"2-116" [label="ctr_real_thirty<0.137298241
+num=116, depth=7
+gain=1377.0354,cover=211634.891
+yes=233,no=234,missing=234"]
+		"2-116" -> "2-233" [label=Yes]
+		"2-116" -> "2-234" [label=No]
+		"2-117" [label="bh_lcf_score0<4.19679928
+num=117, depth=7
+gain=511.101349,cover=205556.812
+yes=235,no=236,missing=236"]
+		"2-117" -> "2-235" [label=Yes]
+		"2-117" -> "2-236" [label=No]
+		"2-118" [label="bh_scls_mt_classes_cos<0.79264766
+num=118, depth=7
+gain=1302.01941,cover=196390.922
+yes=237,no=238,missing=238"]
+		"2-118" -> "2-237" [label=Yes]
+		"2-118" -> "2-238" [label=No]
+		"2-119" [label="bh_rtclasses_mt_classes_cos<0.0970644653
+num=119, depth=7
+gain=847.810181,cover=8205.52441
+yes=239,no=240,missing=240"]
+		"2-119" -> "2-239" [label=Yes]
+		"2-119" -> "2-240" [label=No]
+		"2-120" [label="bh_cls_mt_classes_cos<0.157136559
+num=120, depth=7
+gain=529.194885,cover=8527.47656
+yes=241,no=242,missing=242"]
+		"2-120" -> "2-241" [label=Yes]
+		"2-120" -> "2-242" [label=No]
+		"2-121" [label="bh_cls_mt_classes_cos<0.00379839214
+num=121, depth=7
+gain=1019.57227,cover=54126.707
+yes=243,no=244,missing=244"]
+		"2-121" -> "2-243" [label=Yes]
+		"2-121" -> "2-244" [label=No]
+		"2-122" [label="bh_cls_mt_classes_cos<0.762947559
+num=122, depth=7
+gain=759.2005,cover=139865.266
+yes=245,no=246,missing=246"]
+		"2-122" -> "2-245" [label=Yes]
+		"2-122" -> "2-246" [label=No]
+		"2-123" [label="mt_fields_26<2.00000095
+num=123, depth=7
+gain=157.453201,cover=102792
+yes=247,no=248,missing=248"]
+		"2-123" -> "2-247" [label=Yes]
+		"2-123" -> "2-248" [label=No]
+		"2-124" [label="bh_cls_mt_classes_cos<0.0243220478
+num=124, depth=7
+gain=100.474197,cover=49334.9453
+yes=249,no=250,missing=250"]
+		"2-124" -> "2-249" [label=Yes]
+		"2-124" -> "2-250" [label=No]
+		"2-125" [label="bh_conn_type_2<2.00000095
+num=125, depth=7
+gain=1259.19421,cover=246584.547
+yes=251,no=252,missing=252"]
+		"2-125" -> "2-251" [label=Yes]
+		"2-125" -> "2-252" [label=No]
+		"2-126" [label="bh_os_android<2.00000095
+num=126, depth=7
+gain=432.09848,cover=9182.22559
+yes=253,no=254,missing=254"]
+		"2-126" -> "2-253" [label=Yes]
+		"2-126" -> "2-254" [label=No]
+		"2-127" [label="bh_dssm_score<0.453398973
+num=127, depth=8
+gain=3516.95288,cover=4329080.5
+yes=255,no=256,missing=256"]
+		"2-127" -> "2-255" [label=Yes]
+		"2-127" -> "2-256" [label=No]
+		"2-128" [label="mt_vty_0<2.00000095
+num=128, depth=8
+gain=3239.40479,cover=1437450.25
+yes=257,no=258,missing=258"]
+		"2-128" -> "2-257" [label=Yes]
+		"2-128" -> "2-258" [label=No]
+		"2-129" [label="bh_dssm_score<0.678498983
+num=129, depth=8
+gain=1288.27856,cover=358107.781
+yes=259,no=260,missing=260"]
+		"2-129" -> "2-259" [label=Yes]
+		"2-129" -> "2-260" [label=No]
+		"2-130" [label="bh_dssm_score<0.681298971
+num=130, depth=8
+gain=1882.89233,cover=1066594.62
+yes=261,no=262,missing=262"]
+		"2-130" -> "2-261" [label=Yes]
+		"2-130" -> "2-262" [label=No]
+		"2-131" [label="bh_scls_mt_classes_cos<0.00142961519
+num=131, depth=8
+gain=596.751892,cover=47653.7812
+yes=263,no=264,missing=264"]
+		"2-131" -> "2-263" [label=Yes]
+		"2-131" -> "2-264" [label=No]
+		"2-132" [label="bh_scls_mt_classes_cos<0.00142961519
+num=132, depth=8
+gain=714.188232,cover=17014.7188
+yes=265,no=266,missing=266"]
+		"2-132" -> "2-265" [label=Yes]
+		"2-132" -> "2-266" [label=No]
+		"2-133" [label="bh_cls_mt_classes_cos<0.165578127
+num=133, depth=8
+gain=461.535797,cover=257646.328
+yes=267,no=268,missing=268"]
+		"2-133" -> "2-267" [label=Yes]
+		"2-133" -> "2-268" [label=No]
+		"2-134" [label="bh_scls_mt_classes_cos<0.116977066
+num=134, depth=8
+gain=652.940979,cover=150498.266
+yes=269,no=270,missing=270"]
+		"2-134" -> "2-269" [label=Yes]
+		"2-134" -> "2-270" [label=No]
+		"2-135" [label="bh_cls_mt_classes_cos<0.010435313
+num=135, depth=8
+gain=629.450012,cover=316249.875
+yes=271,no=272,missing=272"]
+		"2-135" -> "2-271" [label=Yes]
+		"2-135" -> "2-272" [label=No]
+		"2-136" [label="ctr_real_4h<0.174724758
+num=136, depth=8
+gain=119.917252,cover=73367.9531
+yes=273,no=274,missing=274"]
+		"2-136" -> "2-273" [label=Yes]
+		"2-136" -> "2-274" [label=No]
+		"2-137" [label="ctr_real_8h<0.254456639
+num=137, depth=8
+gain=64.188858,cover=67161.2422
+yes=275,no=276,missing=276"]
+		"2-137" -> "2-275" [label=Yes]
+		"2-137" -> "2-276" [label=No]
+		"2-138" [label="bh_conn_type_2<2.00000095
+num=138, depth=8
+gain=69.6196976,cover=33361.5664
+yes=277,no=278,missing=278"]
+		"2-138" -> "2-277" [label=Yes]
+		"2-138" -> "2-278" [label=No]
+		"2-139" [label="bh_cls_mt_classes_cos<0.0175533593
+num=139, depth=8
+gain=600.713074,cover=229772.641
+yes=279,no=280,missing=280"]
+		"2-139" -> "2-279" [label=Yes]
+		"2-139" -> "2-280" [label=No]
+		"2-140" [label="ctr_real_4h<0.12050651
+num=140, depth=8
+gain=185.851791,cover=50533.7109
+yes=281,no=282,missing=282"]
+		"2-140" -> "2-281" [label=Yes]
+		"2-140" -> "2-282" [label=No]
+		"2-141" [label="imp_thirty<2098.0
+num=141, depth=8
+gain=120.54351,cover=35184.4531
+yes=283,no=284,missing=284"]
+		"2-141" -> "2-283" [label=Yes]
+		"2-141" -> "2-284" [label=No]
+		"2-142" [label="bh_cls_mt_classes_cos<0.249999002
+num=142, depth=8
+gain=79.068428,cover=33477.1133
+yes=285,no=286,missing=286"]
+		"2-142" -> "2-285" [label=Yes]
+		"2-142" -> "2-286" [label=No]
+		"2-143" [label="bh_rtlabel_mt_labels_cos<0.00999899954
+num=143, depth=8
+gain=12195.9932,cover=8445948
+yes=287,no=288,missing=288"]
+		"2-143" -> "2-287" [label=Yes]
+		"2-143" -> "2-288" [label=No]
+		"2-144" [label="bh_cls_mt_classes_cos<0.207464397
+num=144, depth=8
+gain=4253.46484,cover=2885561.5
+yes=289,no=290,missing=290"]
+		"2-144" -> "2-289" [label=Yes]
+		"2-144" -> "2-290" [label=No]
+		"2-145" [label="bh_rtlabel_mt_labels_cos<0.00999899954
+num=145, depth=8
+gain=8040.98828,cover=2493688.5
+yes=291,no=292,missing=292"]
+		"2-145" -> "2-291" [label=Yes]
+		"2-145" -> "2-292" [label=No]
+		"2-146" [label="ctr_real_16h<0.106740281
+num=146, depth=8
+gain=5443.80078,cover=1018912.62
+yes=293,no=294,missing=294"]
+		"2-146" -> "2-293" [label=Yes]
+		"2-146" -> "2-294" [label=No]
+		"2-147" [label="bh_scls_mt_classes_cos<0.202619448
+num=147, depth=8
+gain=5979.33008,cover=1870957.62
+yes=295,no=296,missing=296"]
+		"2-147" -> "2-295" [label=Yes]
+		"2-147" -> "2-296" [label=No]
+		"2-148" [label="bh_scls_mt_classes_cos<0.021492213
+num=148, depth=8
+gain=12485.7812,cover=1017993.38
+yes=297,no=298,missing=298"]
+		"2-148" -> "2-297" [label=Yes]
+		"2-148" -> "2-298" [label=No]
+		"2-149" [label="bh_lcf_score0<0.411899
+num=149, depth=8
+gain=2506.2998,cover=944295
+yes=299,no=300,missing=300"]
+		"2-149" -> "2-299" [label=Yes]
+		"2-149" -> "2-300" [label=No]
+		"2-150" [label="bh_cls_mt_classes_cos<0.0413978957
+num=150, depth=8
+gain=2612.98438,cover=1129093.5
+yes=301,no=302,missing=302"]
+		"2-150" -> "2-301" [label=Yes]
+		"2-150" -> "2-302" [label=No]
+		"2-151" [label="cp_ulevel_3<2.00000095
+num=151, depth=8
+gain=8356.1123,cover=1209466.75
+yes=303,no=304,missing=304"]
+		"2-151" -> "2-303" [label=Yes]
+		"2-151" -> "2-304" [label=No]
+		"2-152" [label="bh_pctr<673.0
+num=152, depth=8
+gain=5675.15723,cover=134675.484
+yes=305,no=306,missing=306"]
+		"2-152" -> "2-305" [label=Yes]
+		"2-152" -> "2-306" [label=No]
+		"2-153" [label="cp_ulevel_3<2.00000095
+num=153, depth=8
+gain=2287.25903,cover=500895.312
+yes=307,no=308,missing=308"]
+		"2-153" -> "2-307" [label=Yes]
+		"2-153" -> "2-308" [label=No]
+		"2-154" [label="cp_ulevel_3<2.00000095
+num=154, depth=8
+gain=5058.41846,cover=489127.812
+yes=309,no=310,missing=310"]
+		"2-154" -> "2-309" [label=Yes]
+		"2-154" -> "2-310" [label=No]
+		"2-155" [label="bh_dssm_score<0.71349901
+num=155, depth=8
+gain=573.692993,cover=80170.1406
+yes=311,no=312,missing=312"]
+		"2-155" -> "2-311" [label=Yes]
+		"2-155" -> "2-312" [label=No]
+		"2-156" [label="ctr_real_16h<0.177512452
+num=156, depth=8
+gain=532.954102,cover=102738.68
+yes=313,no=314,missing=314"]
+		"2-156" -> "2-313" [label=Yes]
+		"2-156" -> "2-314" [label=No]
+		"2-157" [label="bh_dssm_score<0.71349901
+num=157, depth=8
+gain=968.325195,cover=169121.766
+yes=315,no=316,missing=316"]
+		"2-157" -> "2-315" [label=Yes]
+		"2-157" -> "2-316" [label=No]
+		"2-158" [label="mt_vty_0<2.00000095
+num=158, depth=8
+gain=706.703064,cover=43871.1523
+yes=317,no=318,missing=318"]
+		"2-158" -> "2-317" [label=Yes]
+		"2-158" -> "2-318" [label=No]
+		"2-159" [label="mt_fields_26<2.00000095
+num=159, depth=8
+gain=260.533966,cover=82885.75
+yes=319,no=320,missing=320"]
+		"2-159" -> "2-319" [label=Yes]
+		"2-159" -> "2-320" [label=No]
+		"2-160" [label="ctr_real_sixty<0.0900068209
+num=160, depth=8
+gain=773.91217,cover=185132.609
+yes=321,no=322,missing=322"]
+		"2-160" -> "2-321" [label=Yes]
+		"2-160" -> "2-322" [label=No]
+		"2-161" [label="bh_lcf_score0<1.04519904
+num=161, depth=8
+gain=205.307663,cover=131783
+yes=323,no=324,missing=324"]
+		"2-161" -> "2-323" [label=Yes]
+		"2-161" -> "2-324" [label=No]
+		"2-162" [label="ctr_biased_thirty<0.124243803
+num=162, depth=8
+gain=532.716187,cover=74982.3594
+yes=325,no=326,missing=326"]
+		"2-162" -> "2-325" [label=Yes]
+		"2-162" -> "2-326" [label=No]
+		"2-163" [label="clk_biased_48h<312.910004
+num=163, depth=8
+gain=607.66217,cover=597477.062
+yes=327,no=328,missing=328"]
+		"2-163" -> "2-327" [label=Yes]
+		"2-163" -> "2-328" [label=No]
+		"2-164" [label="ctr_real_thirty<0.10897176
+num=164, depth=8
+gain=589.261963,cover=571532.5
+yes=329,no=330,missing=330"]
+		"2-164" -> "2-329" [label=Yes]
+		"2-164" -> "2-330" [label=No]
+		"2-165" [label="ctr_biased_thirty<0.090644531
+num=165, depth=8
+gain=203.965546,cover=65541.25
+yes=331,no=332,missing=332"]
+		"2-165" -> "2-331" [label=Yes]
+		"2-165" -> "2-332" [label=No]
+		"2-166" [label="mt_time_length<31.9999981
+num=166, depth=8
+gain=789.199707,cover=168416.594
+yes=333,no=334,missing=333"]
+		"2-166" -> "2-333" [label=Yes]
+		"2-166" -> "2-334" [label=No]
+		"2-167" [label="bh_cls_mt_classes_cos<0.0281043462
+num=167, depth=8
+gain=257.625214,cover=208857.547
+yes=335,no=336,missing=336"]
+		"2-167" -> "2-335" [label=Yes]
+		"2-167" -> "2-336" [label=No]
+		"2-168" [label="ctr_real_thirty<0.116907388
+num=168, depth=8
+gain=179.966904,cover=154652.891
+yes=337,no=338,missing=338"]
+		"2-168" -> "2-337" [label=Yes]
+		"2-168" -> "2-338" [label=No]
+		"2-169" [label="bh_cls_mt_classes_cos<0.0413978957
+num=169, depth=8
+gain=49.7079506,cover=15006.8066
+yes=339,no=340,missing=340"]
+		"2-169" -> "2-339" [label=Yes]
+		"2-169" -> "2-340" [label=No]
+		"2-170" [label="bh_cls_mt_classes_cos<0.113409363
+num=170, depth=8
+gain=171.401596,cover=36127.4688
+yes=341,no=342,missing=342"]
+		"2-170" -> "2-341" [label=Yes]
+		"2-170" -> "2-342" [label=No]
+		"2-171" [label="bh_os_iphone<2.00000095
+num=171, depth=8
+gain=143.49556,cover=102830.711
+yes=343,no=344,missing=344"]
+		"2-171" -> "2-343" [label=Yes]
+		"2-171" -> "2-344" [label=No]
+		"2-172" [label="bh_os_iphone<2.00000095
+num=172, depth=8
+gain=172.116714,cover=106087.211
+yes=345,no=346,missing=346"]
+		"2-172" -> "2-345" [label=Yes]
+		"2-172" -> "2-346" [label=No]
+		"2-173" [label="clk_real_8h<1888.0
+num=173, depth=8
+gain=170.836288,cover=124996.07
+yes=347,no=348,missing=348"]
+		"2-173" -> "2-347" [label=Yes]
+		"2-173" -> "2-348" [label=No]
+		"2-174" [label="clk_real_8h<2337.0
+num=174, depth=8
+gain=223.196548,cover=133175.016
+yes=349,no=350,missing=350"]
+		"2-174" -> "2-349" [label=Yes]
+		"2-174" -> "2-350" [label=No]
+		"2-175" [label="imp_thirty<10.999999
+num=175, depth=8
+gain=467.133789,cover=153500.375
+yes=351,no=352,missing=352"]
+		"2-175" -> "2-351" [label=Yes]
+		"2-175" -> "2-352" [label=No]
+		"2-176" [label="clk_biased_48h<1073.62
+num=176, depth=8
+gain=277.277466,cover=123881.648
+yes=353,no=354,missing=354"]
+		"2-176" -> "2-353" [label=Yes]
+		"2-176" -> "2-354" [label=No]
+		"2-177" [label="ctr_biased_48h<0.189707547
+num=177, depth=8
+gain=618.368042,cover=542719.25
+yes=355,no=356,missing=356"]
+		"2-177" -> "2-355" [label=Yes]
+		"2-177" -> "2-356" [label=No]
+		"2-178" [label="bh_scls_mt_classes_cos<0.0459353961
+num=178, depth=8
+gain=736.779541,cover=603278.062
+yes=357,no=358,missing=358"]
+		"2-178" -> "2-357" [label=Yes]
+		"2-178" -> "2-358" [label=No]
+		"2-179" [label="ctr_real_thirty<0.0821390897
+num=179, depth=8
+gain=104.535416,cover=35712.5195
+yes=359,no=360,missing=360"]
+		"2-179" -> "2-359" [label=Yes]
+		"2-179" -> "2-360" [label=No]
+		"2-180" [label="mt_qscore<6.99999905
+num=180, depth=8
+gain=193.903427,cover=20957.0664
+yes=361,no=362,missing=362"]
+		"2-180" -> "2-361" [label=Yes]
+		"2-180" -> "2-362" [label=No]
+		"2-181" [label="ctr_biased_thirty<0.148449048
+num=181, depth=8
+gain=200.909927,cover=65919.1406
+yes=363,no=364,missing=364"]
+		"2-181" -> "2-363" [label=Yes]
+		"2-181" -> "2-364" [label=No]
+		"2-182" [label="clk_real_thirty<923.0
+num=182, depth=8
+gain=291.126404,cover=62583.7266
+yes=365,no=366,missing=366"]
+		"2-182" -> "2-365" [label=Yes]
+		"2-182" -> "2-366" [label=No]
+		"2-183" [label="clk_real_2h<299.0
+num=183, depth=8
+gain=209.569336,cover=77763.7891
+yes=367,no=368,missing=368"]
+		"2-183" -> "2-367" [label=Yes]
+		"2-183" -> "2-368" [label=No]
+		"2-184" [label="bh_lcf_score0<1.44959903
+num=184, depth=8
+gain=226.755188,cover=72431.1797
+yes=369,no=370,missing=370"]
+		"2-184" -> "2-369" [label=Yes]
+		"2-184" -> "2-370" [label=No]
+		"2-185" [label="bh_lcf_score0<1.49199903
+num=185, depth=8
+gain=467.495667,cover=184069.891
+yes=371,no=372,missing=372"]
+		"2-185" -> "2-371" [label=Yes]
+		"2-185" -> "2-372" [label=No]
+		"2-186" [label="ctr_real_thirty<0.177093461
+num=186, depth=8
+gain=466.004761,cover=49937.6602
+yes=373,no=374,missing=374"]
+		"2-186" -> "2-373" [label=Yes]
+		"2-186" -> "2-374" [label=No]
+		"2-187" [label="imp_thirty<2619.0
+num=187, depth=8
+gain=480.999176,cover=240857.641
+yes=375,no=376,missing=376"]
+		"2-187" -> "2-375" [label=Yes]
+		"2-187" -> "2-376" [label=No]
+		"2-188" [label="imp_thirty<5096.0
+num=188, depth=8
+gain=445.040619,cover=191801.391
+yes=377,no=378,missing=378"]
+		"2-188" -> "2-377" [label=Yes]
+		"2-188" -> "2-378" [label=No]
+		"2-189" [label="cp_ulevel_3<2.00000095
+num=189, depth=8
+gain=624.395874,cover=137418.766
+yes=379,no=380,missing=380"]
+		"2-189" -> "2-379" [label=Yes]
+		"2-189" -> "2-380" [label=No]
+		"2-190" [label="mt_img_count_show<4.99999905
+num=190, depth=8
+gain=216.094772,cover=19934.8945
+yes=381,no=382,missing=382"]
+		"2-190" -> "2-381" [label=Yes]
+		"2-190" -> "2-382" [label=No]
+		"2-191" [label="bh_cls_mt_classes_cos<0.00162878924
+num=191, depth=8
+gain=1169.83862,cover=179696.172
+yes=383,no=384,missing=384"]
+		"2-191" -> "2-383" [label=Yes]
+		"2-191" -> "2-384" [label=No]
+		"2-192" [label="bh_lcf_score0<1.94249904
+num=192, depth=8
+gain=779.405762,cover=209914.859
+yes=385,no=386,missing=386"]
+		"2-192" -> "2-385" [label=Yes]
+		"2-192" -> "2-386" [label=No]
+		"2-193" [label="ctr_biased_thirty<0.102169633
+num=193, depth=8
+gain=275.955627,cover=37559.1211
+yes=387,no=388,missing=388"]
+		"2-193" -> "2-387" [label=Yes]
+		"2-193" -> "2-388" [label=No]
+		"2-194" [label="imp_thirty<8836.0
+num=194, depth=8
+gain=432.318542,cover=37558.4219
+yes=389,no=390,missing=390"]
+		"2-194" -> "2-389" [label=Yes]
+		"2-194" -> "2-390" [label=No]
+		"2-195" [label="ctr_biased_48h<0.189707547
+num=195, depth=8
+gain=471.269897,cover=369718.344
+yes=391,no=392,missing=392"]
+		"2-195" -> "2-391" [label=Yes]
+		"2-195" -> "2-392" [label=No]
+		"2-196" [label="imp_thirty<2619.0
+num=196, depth=8
+gain=1687.90637,cover=122499.094
+yes=393,no=394,missing=394"]
+		"2-196" -> "2-393" [label=Yes]
+		"2-196" -> "2-394" [label=No]
+		"2-197" [label="bh_lcf_score0<2.15289903
+num=197, depth=8
+gain=358.761353,cover=318403.719
+yes=395,no=396,missing=396"]
+		"2-197" -> "2-395" [label=Yes]
+		"2-197" -> "2-396" [label=No]
+		"2-198" [label="imp_thirty<2619.0
+num=198, depth=8
+gain=1636.99158,cover=116034.547
+yes=397,no=398,missing=398"]
+		"2-198" -> "2-397" [label=Yes]
+		"2-198" -> "2-398" [label=No]
+		"2-199" [label="bh_cls_mt_classes_cos<0.00162878924
+num=199, depth=8
+gain=298.979675,cover=63116.7227
+yes=399,no=400,missing=400"]
+		"2-199" -> "2-399" [label=Yes]
+		"2-199" -> "2-400" [label=No]
+		"2-200" [label="imp_thirty<8836.0
+num=200, depth=8
+gain=449.556091,cover=130711.109
+yes=401,no=402,missing=402"]
+		"2-200" -> "2-401" [label=Yes]
+		"2-200" -> "2-402" [label=No]
+		"2-201" [label="clk_real_2h<343.0
+num=201, depth=8
+gain=231.327942,cover=151703.078
+yes=403,no=404,missing=404"]
+		"2-201" -> "2-403" [label=Yes]
+		"2-201" -> "2-404" [label=No]
+		"2-202" [label="imp_16h<14635.0
+num=202, depth=8
+gain=480.220581,cover=108621.703
+yes=405,no=406,missing=406"]
+		"2-202" -> "2-405" [label=Yes]
+		"2-202" -> "2-406" [label=No]
+		"2-203" [label="ctr_real_16h<0.284493119
+num=203, depth=8
+gain=490.825165,cover=85135.0156
+yes=407,no=408,missing=408"]
+		"2-203" -> "2-407" [label=Yes]
+		"2-203" -> "2-408" [label=No]
+		"2-204" [label="cp_ulevel_3<2.00000095
+num=204, depth=8
+gain=295.633087,cover=93247.3984
+yes=409,no=410,missing=410"]
+		"2-204" -> "2-409" [label=Yes]
+		"2-204" -> "2-410" [label=No]
+		"2-205" [label="clk_real_2h<343.0
+num=205, depth=8
+gain=143.25824,cover=129429.719
+yes=411,no=412,missing=412"]
+		"2-205" -> "2-411" [label=Yes]
+		"2-205" -> "2-412" [label=No]
+		"2-206" [label="imp_8h<5622.0
+num=206, depth=8
+gain=340.91391,cover=97956.6641
+yes=413,no=414,missing=414"]
+		"2-206" -> "2-413" [label=Yes]
+		"2-206" -> "2-414" [label=No]
+		"2-207" [label="bh_rtclasses_mt_classes_cos<0.0846671909
+num=207, depth=8
+gain=418.353577,cover=18017.0781
+yes=415,no=416,missing=416"]
+		"2-207" -> "2-415" [label=Yes]
+		"2-207" -> "2-416" [label=No]
+		"2-208" [label="imp_thirty<1303.0
+num=208, depth=8
+gain=492.298828,cover=55943.9961
+yes=417,no=418,missing=418"]
+		"2-208" -> "2-417" [label=Yes]
+		"2-208" -> "2-418" [label=No]
+		"2-209" [label="imp_thirty<955.0
+num=209, depth=8
+gain=583.83075,cover=87551.3359
+yes=419,no=420,missing=420"]
+		"2-209" -> "2-419" [label=Yes]
+		"2-209" -> "2-420" [label=No]
+		"2-210" [label="imp_thirty<955.0
+num=210, depth=8
+gain=184.705002,cover=57027.2422
+yes=421,no=422,missing=422"]
+		"2-210" -> "2-421" [label=Yes]
+		"2-210" -> "2-422" [label=No]
+		"2-211" [label="ctr_real_48h<0.272073001
+num=211, depth=8
+gain=357.127991,cover=84889.8984
+yes=423,no=424,missing=424"]
+		"2-211" -> "2-423" [label=Yes]
+		"2-211" -> "2-424" [label=No]
+		"2-212" [label="imp_thirty<8836.0
+num=212, depth=8
+gain=459.536377,cover=81384.8359
+yes=425,no=426,missing=426"]
+		"2-212" -> "2-425" [label=Yes]
+		"2-212" -> "2-426" [label=No]
+		"2-213" [label="clk_real_4h<1104.0
+num=213, depth=8
+gain=275.639191,cover=60825.1133
+yes=427,no=428,missing=428"]
+		"2-213" -> "2-427" [label=Yes]
+		"2-213" -> "2-428" [label=No]
+		"2-214" [label="ctr_real_thirty<0.16215466
+num=214, depth=8
+gain=250.47728,cover=88685.3672
+yes=429,no=430,missing=430"]
+		"2-214" -> "2-429" [label=Yes]
+		"2-214" -> "2-430" [label=No]
+		"2-215" [label="imp_thirty<512.0
+num=215, depth=8
+gain=276.432983,cover=193394.344
+yes=431,no=432,missing=432"]
+		"2-215" -> "2-431" [label=Yes]
+		"2-215" -> "2-432" [label=No]
+		"2-216" [label="bh_lcf_score0<2.40559912
+num=216, depth=8
+gain=163.597931,cover=140019.391
+yes=433,no=434,missing=434"]
+		"2-216" -> "2-433" [label=Yes]
+		"2-216" -> "2-434" [label=No]
+		"2-217" [label="imp_16h<177.0
+num=217, depth=8
+gain=152.063309,cover=177300.047
+yes=435,no=436,missing=436"]
+		"2-217" -> "2-435" [label=Yes]
+		"2-217" -> "2-436" [label=No]
+		"2-218" [label="clk_real_thirty<923.0
+num=218, depth=8
+gain=88.8213806,cover=104103.016
+yes=437,no=438,missing=438"]
+		"2-218" -> "2-437" [label=Yes]
+		"2-218" -> "2-438" [label=No]
+		"2-219" [label="imp_thirty<2098.0
+num=219, depth=8
+gain=580.295227,cover=75655.2969
+yes=439,no=440,missing=440"]
+		"2-219" -> "2-439" [label=Yes]
+		"2-219" -> "2-440" [label=No]
+		"2-220" [label="bh_conn_type_2<2.00000095
+num=220, depth=8
+gain=389.311035,cover=108380.148
+yes=441,no=442,missing=442"]
+		"2-220" -> "2-441" [label=Yes]
+		"2-220" -> "2-442" [label=No]
+		"2-221" [label="imp_thirty<2619.0
+num=221, depth=8
+gain=306.631744,cover=70880.4453
+yes=443,no=444,missing=444"]
+		"2-221" -> "2-443" [label=Yes]
+		"2-221" -> "2-444" [label=No]
+		"2-222" [label="bh_scls_mt_classes_cos<0.79264766
+num=222, depth=8
+gain=376.65863,cover=106424.961
+yes=445,no=446,missing=446"]
+		"2-222" -> "2-445" [label=Yes]
+		"2-222" -> "2-446" [label=No]
+		"2-223" [label="bh_cls_mt_classes_cos<0.00600717124
+num=223, depth=8
+gain=733.812439,cover=15907.6963
+yes=447,no=448,missing=448"]
+		"2-223" -> "2-447" [label=Yes]
+		"2-223" -> "2-448" [label=No]
+		"2-224" [label="bh_cls_mt_classes_cos<0.00379839214
+num=224, depth=8
+gain=478.665131,cover=85736.0938
+yes=449,no=450,missing=450"]
+		"2-224" -> "2-449" [label=Yes]
+		"2-224" -> "2-450" [label=No]
+		"2-225" [label="bh_cls_mt_classes_cos<0.00162878924
+num=225, depth=8
+gain=163.643311,cover=46036.2305
+yes=451,no=452,missing=452"]
+		"2-225" -> "2-451" [label=Yes]
+		"2-225" -> "2-452" [label=No]
+		"2-226" [label="bh_conn_type_2<2.00000095
+num=226, depth=8
+gain=177.465286,cover=85722.1953
+yes=453,no=454,missing=454"]
+		"2-226" -> "2-453" [label=Yes]
+		"2-226" -> "2-454" [label=No]
+		"2-227" [label="bh_lcf_score0<3.40309906
+num=227, depth=8
+gain=183.623337,cover=138633.109
+yes=455,no=456,missing=456"]
+		"2-227" -> "2-455" [label=Yes]
+		"2-227" -> "2-456" [label=No]
+		"2-228" [label="mt_fields_26<2.00000095
+num=228, depth=8
+gain=99.9513092,cover=80444.6875
+yes=457,no=458,missing=458"]
+		"2-228" -> "2-457" [label=Yes]
+		"2-228" -> "2-458" [label=No]
+		"2-229" [label="bh_conn_type_2<2.00000095
+num=229, depth=8
+gain=565.220703,cover=161240.875
+yes=459,no=460,missing=460"]
+		"2-229" -> "2-459" [label=Yes]
+		"2-229" -> "2-460" [label=No]
+		"2-230" [label="bh_os_android<2.00000095
+num=230, depth=8
+gain=71.8409729,cover=4038.46484
+yes=461,no=462,missing=462"]
+		"2-230" -> "2-461" [label=Yes]
+		"2-230" -> "2-462" [label=No]
+		"2-231" [label="bh_rtclasses_mt_classes_cos<0.0909080952
+num=231, depth=8
+gain=369.844208,cover=7392.07812
+yes=463,no=464,missing=464"]
+		"2-231" -> "2-463" [label=Yes]
+		"2-231" -> "2-464" [label=No]
+		"2-232" [label="bh_cls_mt_classes_cos<0.141461551
+num=232, depth=8
+gain=228.02417,cover=7847.95947
+yes=465,no=466,missing=466"]
+		"2-232" -> "2-465" [label=Yes]
+		"2-232" -> "2-466" [label=No]
+		"2-233" [label="bh_cls_mt_classes_cos<0.00379839214
+num=233, depth=8
+gain=669.437744,cover=90922.4844
+yes=467,no=468,missing=468"]
+		"2-233" -> "2-467" [label=Yes]
+		"2-233" -> "2-468" [label=No]
+		"2-234" [label="bh_conn_type_2<2.00000095
+num=234, depth=8
+gain=323.616638,cover=120712.406
+yes=469,no=470,missing=470"]
+		"2-234" -> "2-469" [label=Yes]
+		"2-234" -> "2-470" [label=No]
+		"2-235" [label="ctr_real_thirty<0.122441463
+num=235, depth=8
+gain=234.284912,cover=186899.078
+yes=471,no=472,missing=472"]
+		"2-235" -> "2-471" [label=Yes]
+		"2-235" -> "2-472" [label=No]
+		"2-236" [label="mt_fields_26<2.00000095
+num=236, depth=8
+gain=39.999958,cover=18657.7461
+yes=473,no=474,missing=474"]
+		"2-236" -> "2-473" [label=Yes]
+		"2-236" -> "2-474" [label=No]
+		"2-237" [label="bh_conn_type_2<2.00000095
+num=237, depth=8
+gain=662.679382,cover=191071.453
+yes=475,no=476,missing=476"]
+		"2-237" -> "2-475" [label=Yes]
+		"2-237" -> "2-476" [label=No]
+		"2-238" [label="bh_cls_mt_classes_cos<0.762947559
+num=238, depth=8
+gain=117.171967,cover=5319.47021
+yes=477,no=478,missing=478"]
+		"2-238" -> "2-477" [label=Yes]
+		"2-238" -> "2-478" [label=No]
+		"2-239" [label="cp_pst_15<2.00000095
+num=239, depth=8
+gain=758.625366,cover=7389.77686
+yes=479,no=480,missing=480"]
+		"2-239" -> "2-479" [label=Yes]
+		"2-239" -> "2-480" [label=No]
+		"2-240" [label="cp_ulevel_3<2.00000095
+num=240, depth=8
+gain=94.2001114,cover=815.747253
+yes=481,no=482,missing=482"]
+		"2-240" -> "2-481" [label=Yes]
+		"2-240" -> "2-482" [label=No]
+		"2-241" [label="bh_rtclasses_mt_classes_cos<0.0846671909
+num=241, depth=8
+gain=180.870102,cover=4739.98389
+yes=483,no=484,missing=484"]
+		"2-241" -> "2-483" [label=Yes]
+		"2-241" -> "2-484" [label=No]
+		"2-242" [label="imp_thirty<1.99999905
+num=242, depth=8
+gain=178.015152,cover=3787.49316
+yes=485,no=486,missing=486"]
+		"2-242" -> "2-485" [label=Yes]
+		"2-242" -> "2-486" [label=No]
+		"2-243" [label="clk_real_16h<147.0
+num=243, depth=8
+gain=301.627289,cover=14390.2217
+yes=487,no=488,missing=488"]
+		"2-243" -> "2-487" [label=Yes]
+		"2-243" -> "2-488" [label=No]
+		"2-244" [label="cp_bhv_4<2.00000095
+num=244, depth=8
+gain=182.888794,cover=39736.4844
+yes=489,no=490,missing=490"]
+		"2-244" -> "2-489" [label=Yes]
+		"2-244" -> "2-490" [label=No]
+		"2-245" [label="bh_conn_type_2<2.00000095
+num=245, depth=8
+gain=712.414551,cover=136252.281
+yes=491,no=492,missing=492"]
+		"2-245" -> "2-491" [label=Yes]
+		"2-245" -> "2-492" [label=No]
+		"2-246" [label="bh_cls_mt_classes_cos<0.999998987
+num=246, depth=8
+gain=207.863907,cover=3612.99072
+yes=493,no=494,missing=494"]
+		"2-246" -> "2-493" [label=Yes]
+		"2-246" -> "2-494" [label=No]
+		"2-247" [label="bh_lcf_score0<10.6234989
+num=247, depth=8
+gain=147.484695,cover=79252.3047
+yes=495,no=496,missing=496"]
+		"2-247" -> "2-495" [label=Yes]
+		"2-247" -> "2-496" [label=No]
+		"2-248" [label="bh_comment_count<17.9999981
+num=248, depth=8
+gain=64.4689865,cover=23539.6973
+yes=497,no=498,missing=498"]
+		"2-248" -> "2-497" [label=Yes]
+		"2-248" -> "2-498" [label=No]
+		"2-249" [label="clk_real_16h<9.99999905
+num=249, depth=8
+gain=115.708427,cover=1465.99854
+yes=499,no=500,missing=500"]
+		"2-249" -> "2-499" [label=Yes]
+		"2-249" -> "2-500" [label=No]
+		"2-250" [label="mt_app_type_64<2.00000095
+num=250, depth=8
+gain=95.5378036,cover=47868.9492
+yes=501,no=502,missing=502"]
+		"2-250" -> "2-501" [label=Yes]
+		"2-250" -> "2-502" [label=No]
+		"2-251" [label="bh_lcf_score0<10.6234989
+num=251, depth=8
+gain=626.470703,cover=161047.5
+yes=503,no=504,missing=504"]
+		"2-251" -> "2-503" [label=Yes]
+		"2-251" -> "2-504" [label=No]
+		"2-252" [label="cp_bhv_4<2.00000095
+num=252, depth=8
+gain=422.000793,cover=85537.0391
+yes=505,no=506,missing=506"]
+		"2-252" -> "2-505" [label=Yes]
+		"2-252" -> "2-506" [label=No]
+		"2-253" [label="clk_real_thirty<50.0
+num=253, depth=8
+gain=125.930359,cover=3792.74487
+yes=507,no=508,missing=508"]
+		"2-253" -> "2-507" [label=Yes]
+		"2-253" -> "2-508" [label=No]
+		"2-254" [label="bh_cls_mt_classes_cos<0.762947559
+num=254, depth=8
+gain=154.671951,cover=5389.48096
+yes=509,no=510,missing=510"]
+		"2-254" -> "2-509" [label=Yes]
+		"2-254" -> "2-510" [label=No]
+		"2-255" [label="num=255, depth=9
+cover=2803309
+leaf=-0.0182551201"]
+		"2-256" [label="num=256, depth=9
+cover=1525771.38
+leaf=-0.0176582187"]
+		"2-257" [label="num=257, depth=9
+cover=312229.062
+leaf=-0.0165000241"]
+		"2-258" [label="num=258, depth=9
+cover=1125221.12
+leaf=-0.0176518206"]
+		"2-259" [label="num=259, depth=9
+cover=275005.094
+leaf=-0.0160647519"]
+		"2-260" [label="num=260, depth=9
+cover=83102.6641
+leaf=-0.0146425925"]
+		"2-261" [label="num=261, depth=9
+cover=888246.812
+leaf=-0.0171474721"]
+		"2-262" [label="num=262, depth=9
+cover=178347.781
+leaf=-0.0160206836"]
+		"2-263" [label="num=263, depth=9
+cover=26469.4316
+leaf=-0.0152253937"]
+		"2-264" [label="num=264, depth=9
+cover=21184.3496
+leaf=-0.0129696429"]
+		"2-265" [label="num=265, depth=9
+cover=9530.10645
+leaf=-0.0126277227"]
+		"2-266" [label="num=266, depth=9
+cover=7484.61182
+leaf=-0.00849711522"]
+		"2-267" [label="num=267, depth=9
+cover=183563.688
+leaf=-0.0169176534"]
+		"2-268" [label="num=268, depth=9
+cover=74082.6406
+leaf=-0.0159797445"]
+		"2-269" [label="num=269, depth=9
+cover=101226.914
+leaf=-0.015970191"]
+		"2-270" [label="num=270, depth=9
+cover=49271.3516
+leaf=-0.014563974"]
+		"2-271" [label="num=271, depth=9
+cover=83094.1484
+leaf=-0.0169557761"]
+		"2-272" [label="num=272, depth=9
+cover=233155.719
+leaf=-0.015940018"]
+		"2-273" [label="num=273, depth=9
+cover=36647.7227
+leaf=-0.0177883748"]
+		"2-274" [label="num=274, depth=9
+cover=36720.2344
+leaf=-0.0169696975"]
+		"2-275" [label="num=275, depth=9
+cover=23657.4785
+leaf=-0.0158700552"]
+		"2-276" [label="num=276, depth=9
+cover=43503.7617
+leaf=-0.015210948"]
+		"2-277" [label="num=277, depth=9
+cover=27939.3867
+leaf=-0.0143926153"]
+		"2-278" [label="num=278, depth=9
+cover=5422.18115
+leaf=-0.0156495292"]
+		"2-279" [label="num=279, depth=9
+cover=66629.3438
+leaf=-0.015754465"]
+		"2-280" [label="num=280, depth=9
+cover=163143.297
+leaf=-0.0146255298"]
+		"2-281" [label="num=281, depth=9
+cover=17817.2129
+leaf=-0.0175187401"]
+		"2-282" [label="num=282, depth=9
+cover=32716.5
+leaf=-0.0162399728"]
+		"2-283" [label="num=283, depth=9
+cover=29307.0469
+leaf=-0.0140971504"]
+		"2-284" [label="num=284, depth=9
+cover=5877.40674
+leaf=-0.0156795662"]
+		"2-285" [label="num=285, depth=9
+cover=25048.0195
+leaf=-0.0136540327"]
+		"2-286" [label="num=286, depth=9
+cover=8429.09277
+leaf=-0.0125218127"]
+		"2-287" [label="num=287, depth=9
+cover=7905308
+leaf=-0.0165730324"]
+		"2-288" [label="num=288, depth=9
+cover=540639.75
+leaf=-0.0150204049"]
+		"2-289" [label="num=289, depth=9
+cover=1921191.38
+leaf=-0.015945809"]
+		"2-290" [label="num=290, depth=9
+cover=964370.125
+leaf=-0.0151316589"]
+		"2-291" [label="num=291, depth=9
+cover=2276892
+leaf=-0.0159411915"]
+		"2-292" [label="num=292, depth=9
+cover=216796.484
+leaf=-0.0139254043"]
+		"2-293" [label="num=293, depth=9
+cover=880112.625
+leaf=-0.0147730261"]
+		"2-294" [label="num=294, depth=9
+cover=138799.984
+leaf=-0.0126417587"]
+		"2-295" [label="num=295, depth=9
+cover=1193600.5
+leaf=-0.0150211202"]
+		"2-296" [label="num=296, depth=9
+cover=677357.125
+leaf=-0.0138446065"]
+		"2-297" [label="num=297, depth=9
+cover=468161.344
+leaf=-0.0137234842"]
+		"2-298" [label="num=298, depth=9
+cover=549832.062
+leaf=-0.0115012266"]
+		"2-299" [label="num=299, depth=9
+cover=490949.375
+leaf=-0.0168188475"]
+		"2-300" [label="num=300, depth=9
+cover=453345.594
+leaf=-0.0157871135"]
+		"2-301" [label="num=301, depth=9
+cover=411544.438
+leaf=-0.0150539903"]
+		"2-302" [label="num=302, depth=9
+cover=717549.062
+leaf=-0.0140540572"]
+		"2-303" [label="num=303, depth=9
+cover=655599.625
+leaf=-0.0143926572"]
+		"2-304" [label="num=304, depth=9
+cover=553867.188
+leaf=-0.0127241621"]
+		"2-305" [label="num=305, depth=9
+cover=120910.57
+leaf=-0.0111171613"]
+		"2-306" [label="num=306, depth=9
+cover=13764.9072
+leaf=-0.00434009684"]
+		"2-307" [label="num=307, depth=9
+cover=272091.312
+leaf=-0.0167698506"]
+		"2-308" [label="num=308, depth=9
+cover=228804.016
+leaf=-0.0154125113"]
+		"2-309" [label="num=309, depth=9
+cover=249886.766
+leaf=-0.0149723375"]
+		"2-310" [label="num=310, depth=9
+cover=239241.031
+leaf=-0.0129375821"]
+		"2-311" [label="num=311, depth=9
+cover=65207.2227
+leaf=-0.0124003524"]
+		"2-312" [label="num=312, depth=9
+cover=14962.9189
+leaf=-0.0102265431"]
+		"2-313" [label="num=313, depth=9
+cover=88773.1562
+leaf=-0.0138497632"]
+		"2-314" [label="num=314, depth=9
+cover=13965.5273
+leaf=-0.0117446436"]
+		"2-315" [label="num=315, depth=9
+cover=122507.867
+leaf=-0.0111280391"]
+		"2-316" [label="num=316, depth=9
+cover=46613.8906
+leaf=-0.00943361782"]
+		"2-317" [label="num=317, depth=9
+cover=42713.7305
+leaf=-0.00822470151"]
+		"2-318" [label="num=318, depth=9
+cover=1157.42383
+leaf=-0.0161444936"]
+		"2-319" [label="num=319, depth=9
+cover=54187.5586
+leaf=-0.0149966404"]
+		"2-320" [label="num=320, depth=9
+cover=28698.1914
+leaf=-0.0138134491"]
+		"2-321" [label="num=321, depth=9
+cover=88453.4766
+leaf=-0.0163971633"]
+		"2-322" [label="num=322, depth=9
+cover=96679.125
+leaf=-0.0151007203"]
+		"2-323" [label="num=323, depth=9
+cover=49856.1562
+leaf=-0.014416175"]
+		"2-324" [label="num=324, depth=9
+cover=81926.8516
+leaf=-0.0135984775"]
+		"2-325" [label="num=325, depth=9
+cover=22820.2168
+leaf=-0.0164579656"]
+		"2-326" [label="num=326, depth=9
+cover=52162.1406
+leaf=-0.014622191"]
+		"2-327" [label="num=327, depth=9
+cover=435317.281
+leaf=-0.0138981864"]
+		"2-328" [label="num=328, depth=9
+cover=162159.781
+leaf=-0.0131799197"]
+		"2-329" [label="num=329, depth=9
+cover=396764.281
+leaf=-0.0131265353"]
+		"2-330" [label="num=330, depth=9
+cover=174768.188
+leaf=-0.0124286413"]
+		"2-331" [label="num=331, depth=9
+cover=32714.498
+leaf=-0.0163211972"]
+		"2-332" [label="num=332, depth=9
+cover=32826.7539
+leaf=-0.0151987327"]
+		"2-333" [label="num=333, depth=9
+cover=158314.344
+leaf=-0.0138313854"]
+		"2-334" [label="num=334, depth=9
+cover=10102.2549
+leaf=-0.0167176444"]
+		"2-335" [label="num=335, depth=9
+cover=59889.2305
+leaf=-0.0136662535"]
+		"2-336" [label="num=336, depth=9
+cover=148968.312
+leaf=-0.0128870718"]
+		"2-337" [label="num=337, depth=9
+cover=54752.9414
+leaf=-0.0127663082"]
+		"2-338" [label="num=338, depth=9
+cover=99899.9531
+leaf=-0.0120499916"]
+		"2-339" [label="num=339, depth=9
+cover=7877.9917
+leaf=-0.0165206604"]
+		"2-340" [label="num=340, depth=9
+cover=7128.81494
+leaf=-0.0153390812"]
+		"2-341" [label="num=341, depth=9
+cover=23410.2578
+leaf=-0.0147539768"]
+		"2-342" [label="num=342, depth=9
+cover=12717.2119
+leaf=-0.0133033078"]
+		"2-343" [label="num=343, depth=9
+cover=41361.293
+leaf=-0.0126034748"]
+		"2-344" [label="num=344, depth=9
+cover=61469.418
+leaf=-0.0133698052"]
+		"2-345" [label="num=345, depth=9
+cover=45680.8789
+leaf=-0.0116715441"]
+		"2-346" [label="num=346, depth=9
+cover=60406.332
+leaf=-0.0124884676"]
+		"2-347" [label="num=347, depth=9
+cover=60848.5508
+leaf=-0.0123392874"]
+		"2-348" [label="num=348, depth=9
+cover=64147.5195
+leaf=-0.0115965605"]
+		"2-349" [label="num=349, depth=9
+cover=74469.0625
+leaf=-0.0113865631"]
+		"2-350" [label="num=350, depth=9
+cover=58705.9492
+leaf=-0.010559761"]
+		"2-351" [label="num=351, depth=9
+cover=53211.8555
+leaf=-0.0132220108"]
+		"2-352" [label="num=352, depth=9
+cover=100288.516
+leaf=-0.0143835898"]
+		"2-353" [label="num=353, depth=9
+cover=91519.6562
+leaf=-0.0126467533"]
+		"2-354" [label="num=354, depth=9
+cover=32361.9902
+leaf=-0.0115668755"]
+		"2-355" [label="num=355, depth=9
+cover=428907.562
+leaf=-0.012369086"]
+		"2-356" [label="num=356, depth=9
+cover=113811.68
+leaf=-0.0115389377"]
+		"2-357" [label="num=357, depth=9
+cover=198610.266
+leaf=-0.0116925836"]
+		"2-358" [label="num=358, depth=9
+cover=404667.812
+leaf=-0.0109482883"]
+		"2-359" [label="num=359, depth=9
+cover=15819.0723
+leaf=-0.0171532724"]
+		"2-360" [label="num=360, depth=9
+cover=19893.4453
+leaf=-0.0160499755"]
+		"2-361" [label="num=361, depth=9
+cover=13066.0918
+leaf=-0.014062074"]
+		"2-362" [label="num=362, depth=9
+cover=7890.9751
+leaf=-0.0160584394"]
+		"2-363" [label="num=363, depth=9
+cover=59965.1484
+leaf=-0.0148634063"]
+		"2-364" [label="num=364, depth=9
+cover=5953.9917
+leaf=-0.0129272565"]
+		"2-365" [label="num=365, depth=9
+cover=39501.6289
+leaf=-0.0126198456"]
+		"2-366" [label="num=366, depth=9
+cover=23082.0977
+leaf=-0.0140376063"]
+		"2-367" [label="num=367, depth=9
+cover=60694.7422
+leaf=-0.0126695074"]
+		"2-368" [label="num=368, depth=9
+cover=17069.043
+leaf=-0.0139286984"]
+		"2-369" [label="num=369, depth=9
+cover=33677.8555
+leaf=-0.0121269263"]
+		"2-370" [label="num=370, depth=9
+cover=38753.3242
+leaf=-0.0110018635"]
+		"2-371" [label="num=371, depth=9
+cover=105524.219
+leaf=-0.011175097"]
+		"2-372" [label="num=372, depth=9
+cover=78545.6719
+leaf=-0.0101549206"]
+		"2-373" [label="num=373, depth=9
+cover=18989.6777
+leaf=-0.013473453"]
+		"2-374" [label="num=374, depth=9
+cover=30947.9824
+leaf=-0.0114803882"]
+		"2-375" [label="num=375, depth=9
+cover=192242.828
+leaf=-0.0107607264"]
+		"2-376" [label="num=376, depth=9
+cover=48614.8086
+leaf=-0.0118754907"]
+		"2-377" [label="num=377, depth=9
+cover=171429.094
+leaf=-0.00989375915"]
+		"2-378" [label="num=378, depth=9
+cover=20372.3066
+leaf=-0.0114588775"]
+		"2-379" [label="num=379, depth=9
+cover=57060.5352
+leaf=-0.00991407968"]
+		"2-380" [label="num=380, depth=9
+cover=80358.2266
+leaf=-0.00854523201"]
+		"2-381" [label="num=381, depth=9
+cover=12415.9258
+leaf=-0.00988954492"]
+		"2-382" [label="num=382, depth=9
+cover=7518.96875
+leaf=-0.0120432377"]
+		"2-383" [label="num=383, depth=9
+cover=60740.1758
+leaf=-0.0128070647"]
+		"2-384" [label="num=384, depth=9
+cover=118956
+leaf=-0.0111003881"]
+		"2-385" [label="num=385, depth=9
+cover=100251.125
+leaf=-0.0105838357"]
+		"2-386" [label="num=386, depth=9
+cover=109663.742
+leaf=-0.00936315861"]
+		"2-387" [label="num=387, depth=9
+cover=20568.5801
+leaf=-0.0153313754"]
+		"2-388" [label="num=388, depth=9
+cover=16990.541
+leaf=-0.0136026777"]
+		"2-389" [label="num=389, depth=9
+cover=21773.2129
+leaf=-0.0116085541"]
+		"2-390" [label="num=390, depth=9
+cover=15785.2119
+leaf=-0.0137859806"]
+		"2-391" [label="num=391, depth=9
+cover=287447.312
+leaf=-0.0104440218"]
+		"2-392" [label="num=392, depth=9
+cover=82271.0547
+leaf=-0.00958471373"]
+		"2-393" [label="num=393, depth=9
+cover=101320.297
+leaf=-0.00855710637"]
+		"2-394" [label="num=394, depth=9
+cover=21178.7949
+leaf=-0.0116619468"]
+		"2-395" [label="num=395, depth=9
+cover=194375.766
+leaf=-0.00921635795"]
+		"2-396" [label="num=396, depth=9
+cover=124027.969
+leaf=-0.00852723978"]
+		"2-397" [label="num=397, depth=9
+cover=99769.4766
+leaf=-0.00698996708"]
+		"2-398" [label="num=398, depth=9
+cover=16265.0654
+leaf=-0.0104117487"]
+		"2-399" [label="num=399, depth=9
+cover=20239.8418
+leaf=-0.0118568363"]
+		"2-400" [label="num=400, depth=9
+cover=42876.8828
+leaf=-0.0103793507"]
+		"2-401" [label="num=401, depth=9
+cover=119440.438
+leaf=-0.0090075247"]
+		"2-402" [label="num=402, depth=9
+cover=11270.6689
+leaf=-0.0110986838"]
+		"2-403" [label="num=403, depth=9
+cover=77018.2656
+leaf=-0.00945430063"]
+		"2-404" [label="num=404, depth=9
+cover=74684.8125
+leaf=-0.0086718332"]
+		"2-405" [label="num=405, depth=9
+cover=72289.375
+leaf=-0.00784548838"]
+		"2-406" [label="num=406, depth=9
+cover=36332.3281
+leaf=-0.0064354348"]
+		"2-407" [label="num=407, depth=9
+cover=70538.4141
+leaf=-0.00855970941"]
+		"2-408" [label="num=408, depth=9
+cover=14596.6045
+leaf=-0.0105758291"]
+		"2-409" [label="num=409, depth=9
+cover=24731.0566
+leaf=-0.00846028514"]
+		"2-410" [label="num=410, depth=9
+cover=68516.3359
+leaf=-0.00718359789"]
+		"2-411" [label="num=411, depth=9
+cover=64801.9219
+leaf=-0.00812350959"]
+		"2-412" [label="num=412, depth=9
+cover=64627.8008
+leaf=-0.00745672127"]
+		"2-413" [label="num=413, depth=9
+cover=43438.8789
+leaf=-0.00638542324"]
+		"2-414" [label="num=414, depth=9
+cover=54517.7812
+leaf=-0.00519737275"]
+		"2-415" [label="num=415, depth=9
+cover=16271.3555
+leaf=-0.0126789007"]
+		"2-416" [label="num=416, depth=9
+cover=1745.72192
+leaf=-0.00751985377"]
+		"2-417" [label="num=417, depth=9
+cover=47633.0156
+leaf=-0.00876577571"]
+		"2-418" [label="num=418, depth=9
+cover=8310.98145
+leaf=-0.0114054941"]
+		"2-419" [label="num=419, depth=9
+cover=77293.6328
+leaf=-0.0084173698"]
+		"2-420" [label="num=420, depth=9
+cover=10257.7012
+leaf=-0.0109579992"]
+		"2-421" [label="num=421, depth=9
+cover=51092.8594
+leaf=-0.00697790645"]
+		"2-422" [label="num=422, depth=9
+cover=5934.38184
+leaf=-0.00884421449"]
+		"2-423" [label="num=423, depth=9
+cover=71804.875
+leaf=-0.00766236149"]
+		"2-424" [label="num=424, depth=9
+cover=13085.0205
+leaf=-0.00946017355"]
+		"2-425" [label="num=425, depth=9
+cover=74537.4766
+leaf=-0.00634810608"]
+		"2-426" [label="num=426, depth=9
+cover=6847.35938
+leaf=-0.00905616302"]
+		"2-427" [label="num=427, depth=9
+cover=59273.4062
+leaf=-0.00637705205"]
+		"2-428" [label="num=428, depth=9
+cover=1551.70728
+leaf=-0.0106484685"]
+		"2-429" [label="num=429, depth=9
+cover=31305.9844
+leaf=-0.00596461631"]
+		"2-430" [label="num=430, depth=9
+cover=57379.3828
+leaf=-0.00485198572"]
+		"2-431" [label="num=431, depth=9
+cover=170494.438
+leaf=-0.0074943006"]
+		"2-432" [label="num=432, depth=9
+cover=22899.8984
+leaf=-0.00866566878"]
+		"2-433" [label="num=433, depth=9
+cover=55291.793
+leaf=-0.00710442523"]
+		"2-434" [label="num=434, depth=9
+cover=84727.6016
+leaf=-0.006404215"]
+		"2-435" [label="num=435, depth=9
+cover=31925.2461
+leaf=-0.00546990521"]
+		"2-436" [label="num=436, depth=9
+cover=145374.797
+leaf=-0.00623300066"]
+		"2-437" [label="num=437, depth=9
+cover=95912.8125
+leaf=-0.00533931144"]
+		"2-438" [label="num=438, depth=9
+cover=8190.20557
+leaf=-0.00425275089"]
+		"2-439" [label="num=439, depth=9
+cover=66716.4531
+leaf=-0.00557260029"]
+		"2-440" [label="num=440, depth=9
+cover=8938.84473
+leaf=-0.0082865078"]
+		"2-441" [label="num=441, depth=9
+cover=66678.6328
+leaf=-0.00404947484"]
+		"2-442" [label="num=442, depth=9
+cover=41701.5156
+leaf=-0.00528162532"]
+		"2-443" [label="num=443, depth=9
+cover=65191.4688
+leaf=-0.00394087611"]
+		"2-444" [label="num=444, depth=9
+cover=5688.97314
+leaf=-0.00636215694"]
+		"2-445" [label="num=445, depth=9
+cover=104099.961
+leaf=-0.00292872125"]
+		"2-446" [label="num=446, depth=9
+cover=2324.99414
+leaf=-0.00699803"]
+		"2-447" [label="num=447, depth=9
+cover=6993.54639
+leaf=-0.0111316582"]
+		"2-448" [label="num=448, depth=9
+cover=8914.15039
+leaf=-0.00680249976"]
+		"2-449" [label="num=449, depth=9
+cover=23963.5469
+leaf=-0.006811928"]
+		"2-450" [label="num=450, depth=9
+cover=61772.5469
+leaf=-0.0051463698"]
+		"2-451" [label="num=451, depth=9
+cover=10666.665
+leaf=-0.00556597998"]
+		"2-452" [label="num=452, depth=9
+cover=35369.5664
+leaf=-0.00415207958"]
+		"2-453" [label="num=453, depth=9
+cover=51215.8203
+leaf=-0.0031756328"]
+		"2-454" [label="num=454, depth=9
+cover=34506.3789
+leaf=-0.0041037444"]
+		"2-455" [label="num=455, depth=9
+cover=121435.414
+leaf=-0.00449178321"]
+		"2-456" [label="num=456, depth=9
+cover=17197.7012
+leaf=-0.00338718994"]
+		"2-457" [label="num=457, depth=9
+cover=53424.2969
+leaf=-0.00327295088"]
+		"2-458" [label="num=458, depth=9
+cover=27020.3926
+leaf=-0.00401972746"]
+		"2-459" [label="num=459, depth=9
+cover=101477.711
+leaf=-0.00113542646"]
+		"2-460" [label="num=460, depth=9
+cover=59763.1641
+leaf=-0.0023613153"]
+		"2-461" [label="num=461, depth=9
+cover=1714.99304
+leaf=-0.00417877035"]
+		"2-462" [label="num=462, depth=9
+cover=2323.47168
+leaf=-0.0068825651"]
+		"2-463" [label="num=463, depth=9
+cover=6567.09424
+leaf=-0.0106422827"]
+		"2-464" [label="num=464, depth=9
+cover=824.983948
+leaf=-0.00353318127"]
+		"2-465" [label="num=465, depth=9
+cover=4871.96436
+leaf=-0.00579050835"]
+		"2-466" [label="num=466, depth=9
+cover=2975.99512
+leaf=-0.00227629906"]
+		"2-467" [label="num=467, depth=9
+cover=25142.3613
+leaf=-0.00461770967"]
+		"2-468" [label="num=468, depth=9
+cover=65780.125
+leaf=-0.00269918679"]
+		"2-469" [label="num=469, depth=9
+cover=72189.4766
+leaf=-0.00117570127"]
+		"2-470" [label="num=470, depth=9
+cover=48522.9375
+leaf=-0.00223177485"]
+		"2-471" [label="num=471, depth=9
+cover=89869.6406
+leaf=-0.00220954441"]
+		"2-472" [label="num=472, depth=9
+cover=97029.4297
+leaf=-0.00150087045"]
+		"2-473" [label="num=473, depth=9
+cover=14090.498
+leaf=0.000157731454"]
+		"2-474" [label="num=474, depth=9
+cover=4567.24805
+leaf=-0.000919055543"]
+		"2-475" [label="num=475, depth=9
+cover=121133.203
+leaf=0.00120744389"]
+		"2-476" [label="num=476, depth=9
+cover=69938.2422
+leaf=-1.50872493e-05"]
+		"2-477" [label="num=477, depth=9
+cover=1108.49902
+leaf=-0.00136114121"]
+		"2-478" [label="num=478, depth=9
+cover=4210.97119
+leaf=-0.00501672504"]
+		"2-479" [label="num=479, depth=9
+cover=5054.54443
+leaf=-0.0125485668"]
+		"2-480" [label="num=480, depth=9
+cover=2335.23267
+leaf=-0.00565325888"]
+		"2-481" [label="num=481, depth=9
+cover=181.498001
+leaf=-0.00596134597"]
+		"2-482" [label="num=482, depth=9
+cover=634.249268
+leaf=0.00219014916"]
+		"2-483" [label="num=483, depth=9
+cover=3986.73364
+leaf=-0.00475571631"]
+		"2-484" [label="num=484, depth=9
+cover=753.25
+leaf=0.000586552953"]
+		"2-485" [label="num=485, depth=9
+cover=909.244812
+leaf=0.00496097701"]
+		"2-486" [label="num=486, depth=9
+cover=2878.24829
+leaf=-0.00011261215"]
+		"2-487" [label="num=487, depth=9
+cover=7192.47607
+leaf=-0.0037010496"]
+		"2-488" [label="num=488, depth=9
+cover=7197.74609
+leaf=-0.000805453805"]
+		"2-489" [label="num=489, depth=9
+cover=3567.24048
+leaf=0.00301357522"]
+		"2-490" [label="num=490, depth=9
+cover=36169.2422
+leaf=0.000640535494"]
+		"2-491" [label="num=491, depth=9
+cover=83120.3125
+leaf=0.00292662252"]
+		"2-492" [label="num=492, depth=9
+cover=53131.9648
+leaf=0.00144403602"]
+		"2-493" [label="num=493, depth=9
+cover=2995.9917
+leaf=-0.003383809"]
+		"2-494" [label="num=494, depth=9
+cover=616.999146
+leaf=0.00298651401"]
+		"2-495" [label="num=495, depth=9
+cover=79090.5547
+leaf=0.00324829039"]
+		"2-496" [label="num=496, depth=9
+cover=161.749603
+leaf=0.0127810156"]
+		"2-497" [label="num=497, depth=9
+cover=17150.957
+leaf=0.00265566097"]
+		"2-498" [label="num=498, depth=9
+cover=6388.74023
+leaf=0.00147838157"]
+		"2-499" [label="num=499, depth=9
+cover=117.499741
+leaf=-0.0102115748"]
+		"2-500" [label="num=500, depth=9
+cover=1348.49878
+leaf=9.49092719e-05"]
+		"2-501" [label="num=501, depth=9
+cover=35786.7109
+leaf=0.00217933836"]
+		"2-502" [label="num=502, depth=9
+cover=12082.2373
+leaf=0.00115073298"]
+		"2-503" [label="num=503, depth=9
+cover=159711.297
+leaf=0.00597519567"]
+		"2-504" [label="num=504, depth=9
+cover=1336.1991
+leaf=0.0128504522"]
+		"2-505" [label="num=505, depth=9
+cover=7857.41064
+leaf=0.00673962943"]
+		"2-506" [label="num=506, depth=9
+cover=77679.6328
+leaf=0.00430730963"]
+		"2-507" [label="num=507, depth=9
+cover=2429.49683
+leaf=0.00239520171"]
+		"2-508" [label="num=508, depth=9
+cover=1363.24817
+leaf=-0.00140127388"]
+		"2-509" [label="num=509, depth=9
+cover=850.249878
+leaf=0.000539023313"]
+		"2-510" [label="num=510, depth=9
+cover=4539.23096
+leaf=-0.00410775654"]
+	}
+}
